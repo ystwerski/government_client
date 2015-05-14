@@ -1,0 +1,25 @@
+<%= form_tag "/countries" do %>
+	<%= label_tag "name" %>
+	<%= text_field_tag :name %>
+	<br>
+	<br>
+	<%= label_tag "population" %>
+	<%= text_field_tag :population %>
+	<br>
+	<br>
+	<%= label_tag "size" %>
+	<%= text_field_tag :size %>
+	<br>
+	<br>
+	<%= label_tag "continent" %>
+	<%= text_field_tag :continent %>
+	<br>
+	<br>
+	<%= label_tag "government_type" %>
+	<%= text_field_tag :government_type %>
+	<br>
+	<br>
+	<%= label_tag "highest_officer" %>
+	<%= text_field_tag :highest_officer %>
+	<%= submit_tag "Create new country!" %>
+<% end %>

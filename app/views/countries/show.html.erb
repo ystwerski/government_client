@@ -1,0 +1,12 @@
+<% @country.each do |key, value| %>
+	<h1><%= key + ':' %></h1>  <h3><%= value %></h3>
+<% end %>
+
+<h1>Or...We can show it like this</h1>
+
+<h1>name:</h1> <h3><%= @kountry.name %></h3>
+<h1>Population:</h1><h3><%= @kountry.population %></h3>
+<h1>Size:</h1> <h3><%= @kountry.size %></h3>
+<h1>Continent:</h1> <h3><%= @kountry.continent %></h3>
+<h1>Government_type:</h1><h3><%= @kountry.government_type %></h3>
+<h1>Highest_officer:</h1><h3><%= @kountry.highest_officer %></h3>

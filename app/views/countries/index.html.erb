@@ -1,0 +1,18 @@
+	<% @countries_array.each do |country_hash| %>
+		<% country_hash.each do |key, value| %>
+		<h1><%= key + ':' %></h1>  <h3><%= value %></h3>
+		<% end %>
+		<hr>
+	<% end %>
+<hr>
+<hr>
+<h1>Or we can do it like this</h1>
+<% @countries.each do |country| %>
+	<h1>Name:</h1> <h3><%= country.name %></h3>
+	<h1>Population:</h1> <h3><%= country.population %></h3>
+	<h1>Size:</h1><h3> <%= country.size %></h3>
+	<h1>Continent:</h1> <h3><%= country.continent %></h3>
+	<h1>Government type:</h1> <h3><%= country.government_type %></h3>
+	<h1>Highest officer:</h1> <h3><%= country.highest_officer %></h3>
+	<hr>
+<% end %>
